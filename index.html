@@ -14,7 +14,11 @@
     />
 
     <!-- ===== CSS DE LIBRERÍAS (Persona B los añade aquí) ===== -->
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <!-- Nuestro CSS propio -->
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -105,19 +109,24 @@
     <main>
       <!-- ================= PORTADA ================= -->
       <section id="inicio" class="mx-auto max-w-6xl px-5 py-20 md:py-28">
-        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-suave">
+        <p
+          data-aos="fade-up"
+          class="text-sm font-semibold uppercase tracking-[0.3em] text-suave"
+        >
           Ferretería y mercería · Lavapiés · Desde 1962
         </p>
         <h1
+          data-aos="fade-up"
           class="mt-5 max-w-3xl font-rotulo text-5xl leading-tight font-bold md:text-7xl"
         >
           Eres perfecta xoxo<span class="text-acento italic"></span>
         </h1>
-        <p class="mt-6 max-w-xl text-lg text-suave">
+        <p data-aos="fade-up" class="mt-6 max-w-xl text-lg text-suave">
           Tornillos sueltos, botones de nácar, hilo de todos los colores y
           consejo de toda la vida. Tres generaciones detrás del mismo mostrador.
         </p>
         <a
+          data-aos="fade-up"
           href="#productos"
           class="mt-10 inline-block rounded-full bg-acento px-8 py-3 font-semibold text-fondo hover:opacity-90"
         >
@@ -136,6 +145,7 @@
           <!-- Persona B: convertir esta rejilla en un slider con Swiper -->
           <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <article
+              data-aos="flip-left"
               class="producto rounded-2xl border border-borde bg-fondo p-6"
             >
               <p class="etiqueta">N.º 01</p>
@@ -151,6 +161,7 @@
             </article>
 
             <article
+              data-aos="flip-left"
               class="producto rounded-2xl border border-borde bg-fondo p-6"
             >
               <p class="etiqueta">N.º 02</p>
@@ -166,6 +177,7 @@
             </article>
 
             <article
+              data-aos="flip-left"
               class="producto rounded-2xl border border-borde bg-fondo p-6"
             >
               <p class="etiqueta">N.º 03</p>
@@ -179,6 +191,7 @@
             </article>
 
             <article
+              data-aos="flip-left"
               class="producto rounded-2xl border border-borde bg-fondo p-6"
             >
               <p class="etiqueta">N.º 04</p>
@@ -194,6 +207,7 @@
             </article>
 
             <article
+              data-aos="flip-left"
               class="producto rounded-2xl border border-borde bg-fondo p-6"
             >
               <p class="etiqueta">N.º 05</p>
@@ -209,6 +223,7 @@
             </article>
 
             <article
+              data-aos="flip-left"
               class="producto rounded-2xl border border-borde bg-fondo p-6"
             >
               <p class="etiqueta">N.º 06</p>
@@ -301,7 +316,15 @@
     </footer>
 
     <!-- ===== JS DE LIBRERÍAS (Persona B los añade aquí, ANTES de nuestro JS) ===== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.factory.js"
+      integrity="sha512-kjfoQJBiS9DXx51oR/Sz+V5aWWU2YU5CXcbMnZkh/C6lSe0cOifIuevdIsv0JoLf1zPeDMRZKcTGNC8YgAG/Tg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- ===== NUESTRO JAVASCRIPT ===== -->
     <script src="js/interfaz.js"></script>
     <script src="js/librerias.js"></script>
